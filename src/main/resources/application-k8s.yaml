@@ -1,6 +1,6 @@
 eureka:
   instance:
     hostname: sv-registry-server.svc.cluster.local
-    appname: k8s-eureka-server
+    appname: eureka-server
     instance-id: k8s-eureka-server
     app-group-name: eureka-server
