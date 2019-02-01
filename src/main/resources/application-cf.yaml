@@ -1,0 +1,6 @@
+eureka:
+  instance:
+    hostname: sv-registry-server.cfapps.io
+    appname: eureka-server
+    instance-id: eureka-server
+    app-group-name: eureka-server

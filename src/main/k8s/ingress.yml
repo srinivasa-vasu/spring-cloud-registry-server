@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: sv-registry-server
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    ingress.kubernetes.io/rewrite-target: /
+    ingress.kubernetes.io/ssl-redirect: "false"  
+spec:
+  rules:
+  - host: <ingress_domain>
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: sv-registry-server
+          servicePort: 80
+      - path: /*
+        backend:
+          serviceName: sv-registry-server
+          servicePort: 80
