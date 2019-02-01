@@ -1,4 +1,4 @@
 eureka:
   client:
     service-url:
-      defaultZone: https://sv-registry-server.cfapps.io/eureka,http://sv-registry-server.pksapps.humourmind.com/eureka
+      defaultZone: <cf_eureka_endpoint>,<k8s_eureka_endpoint>

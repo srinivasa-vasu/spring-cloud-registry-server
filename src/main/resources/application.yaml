@@ -13,7 +13,6 @@ eureka:
     renewal-threshold-update-interval-ms: 15000
   client:
     fetch-registry: true
-    prefer-same-zone-eureka: false
     register-with-eureka: true
 management:
   endpoints:
